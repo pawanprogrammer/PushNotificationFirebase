@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneLoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile No"
+        android:id="@+id/et_mobile"
+        android:maxLength="10"
+        android:inputType="phone"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate OTP"
+        android:id="@+id/btn_generate"
+        app:layout_constraintTop_toBottomOf="@+id/et_mobile"></Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your OTP"
+        android:id="@+id/et_otp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_generate"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:id="@+id/btn_verify"
+        app:layout_constraintTop_toBottomOf="@+id/et_otp"
+        ></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
